@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ghcr.io/YOUR_USER/hello-fastapi-docker:latest
+    restart: always
+    ports:
+      - "8000:8000"

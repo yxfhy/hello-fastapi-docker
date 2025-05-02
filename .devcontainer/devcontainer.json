@@ -1,0 +1,14 @@
+{
+  "name": "hello-fastapi",
+  "build": {
+    "context": "..",
+    "dockerfile": ".devcontainer/Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "forwardPorts": [
+    8000
+  ],
+  "postCreateCommand": "pip install -r requirements.txt"
+}

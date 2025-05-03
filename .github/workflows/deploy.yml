@@ -18,4 +18,5 @@ jobs:
           script: |
             docker pull ghcr.io/${{ github.repository }}:latest
             docker compose -f /srv/app/docker-compose.yml up -d
+            sleep 5
             curl -fsSL http://localhost:8000/ | grep '"Hello, World"' || exit 1
